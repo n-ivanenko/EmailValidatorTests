@@ -1,0 +1,20 @@
+﻿<RunSettings>
+	<TestRunParameters>
+		<Parameter name="ValidEmails" value="test@example.com;valid.email@domain.com;user.name@sub.domain.com;simple@example.com;user@localserver;name@domain.org;me@website.net;user@domain.co;email@server.info;contact@my-site.com"/>
+		<Parameter name="InvalidEmails" value="invalidemail.com;@no-user-part.com;user@.com;user@domain;user@domain.c;user@domain..com;user@domain.com.;user@domain.com space; user@domain.com;user@domain.com ;no@tld;user@invalid-.com;user@-domain.com"/>
+	</TestRunParameters>
+	<RunConfiguration>
+		<ResultsDirectory>.\TestResults</ResultsDirectory>
+		<TestAdaptersPaths>$(SolutionDir)\packages</TestAdaptersPaths>
+	</RunConfiguration>
+	<LoggerRunSettings>
+		<Loggers>
+			<Logger friendlyName="htmlLogger" uri="datacollector://Microsoft/HtmlLogger/v1">
+				<Configuration>
+					<TestResultsDirectory>.\TestResults</TestResultsDirectory>
+					<FileName>Lastname_Report.html</FileName>
+				</Configuration>
+			</Logger>
+		</Loggers>
+	</LoggerRunSettings>
+</RunSettings>
